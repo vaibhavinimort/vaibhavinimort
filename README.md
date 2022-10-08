@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @vaibhavinimott
+- 👋 Hi, I’m @Vaibhavi Ashish Nimrot
 - 👀 I’m interested in developing new open source project
 - 🌱 I’m currently learning node js project 
 - 💞️ I’m looking to collaborate on freelancing 

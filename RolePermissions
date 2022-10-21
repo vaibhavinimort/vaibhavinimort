@@ -1,0 +1,44 @@
+create a schema to store roles and permissions for a school management system
+
+Users
+	id
+  name
+
+Roles
+	id
+  name
+
+Permissions
+	id
+  name
+
+PermissionTypes
+	id
+  name
+  
+role_permission
+	id
+  roleId
+  permissionId
+
+role_permission_permissionTypes
+	id
+  role_permission_id
+  Permission_type_id
+  
+user_role
+	id
+  userId
+  roleId
+  
+  // role Id is 1
+  // Per  Id is 2
+  // Edit  Id is 3
+  
+  write a query to fetch all users with permission to read attendence
+  SELECT * FROM Users 
+  inner join user_role as UR on User.id = userId.id 
+  inner join role_permission.roleId = UR.roleId and permissionId = 2 
+  inner join role_permission_permissionTypes on role_permission.id = role_permission_permissionTypes.role_permission_id 
+  where role_permission_permissionTypes.Permission_type_id = 3
+  
